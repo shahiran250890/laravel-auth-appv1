@@ -12,7 +12,7 @@ RUN docker-php-ext-install opcache
 
 WORKDIR /var/www/html
 
-COPY --chown=root:www-data . /var/www/html
+COPY --chown=www-data:www-data . /var/www/html
 # install composer
 COPY --from=composer:2.7.6 /usr/bin/composer /usr/bin/composer
 
