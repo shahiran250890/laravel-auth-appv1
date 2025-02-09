@@ -52,15 +52,18 @@ Ensure you have the following installed on your system:
 
 7. **Artisan Command**
     ```sh
-    docker exec -it php_container /bin/sh -c "php artisan cache:Clear"
+    docker exec -it php_container /bin/sh -c "php artisan cache:clear"
     docker exec -it php_container /bin/sh -c "php artisan config:cache"
     docker exec -it php_container /bin/sh -c "php artisan view:clear"
     docker exec -it php_container /bin/sh -c "php artisan route:clear"
 
 8. **Permission Issue (optional)**
+    
     accessing docker as root
     ```sh
     docker exec -u root -it php_container sh
+    chown -R root:www-data <file/folder path>
+    chmod -R 775 <file/folder path>
 
 ## License
 
