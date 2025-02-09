@@ -19,7 +19,7 @@ Ensure you have the following installed on your system:
 - Composer
 - Node.js & npm
 - Docker & Docker Compose
-- MySQL or PostgreSQL (if not using Docker)
+- MySQL
 
 ## Installation
 
